@@ -34,7 +34,7 @@ namespace CashMastersPOS
 
         private void ProcessChange(Product product, List<double> billsAndCoinsProvidedByCustomer)
         {
-            // Obtain change amount
+            // Obtain total change amount
             var change = _calculator.CalculateChange(product.Price, billsAndCoinsProvidedByCustomer);
 
             if (change > 0)
